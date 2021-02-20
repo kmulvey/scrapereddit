@@ -30,9 +30,9 @@ func main() {
 			if strings.Contains(strings.ToLower(post.Title), "[wts]") {
 				if strings.Contains(strings.ToLower(post.Title), "zmf ") {
 					printAndSave(client, post)
-				} else if strings.Contains(strings.ToLower(post.Title), "tor ") {
+				} else if strings.Contains(strings.ToLower(post.Title), "tor") && strings.Contains(strings.ToLower(post.Title), "balanced") {
 					printAndSave(client, post)
-				} else if strings.Contains(strings.ToLower(post.Title), "rme ") {
+				} else if strings.Contains(strings.ToLower(post.Title), "rme") && strings.Contains(strings.ToLower(post.Title), "adi-2") {
 					printAndSave(client, post)
 				}
 			}
